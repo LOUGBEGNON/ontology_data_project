@@ -6,14 +6,19 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 import os, json, csv
 from io import StringIO
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Namespace
 EX = Namespace("http://example.org/retail/")
 QB = Namespace("http://purl.org/linked-data/cube#")
 
+api_key = os.getenv('OPENAI_KEY')
+
 # Initialiser le modèle de langage OpenAI avec clé API
 llm = ChatOpenAI(
-    api_key="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",
+    api_key=api_key,
     model="gpt-4")
 
 # Définir un template pour le prompt
