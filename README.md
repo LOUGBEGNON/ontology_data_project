@@ -45,4 +45,4 @@ python -m streamlit run app.py
 Saisissez vos données de ventes dans l'interface, puis cliquez sur "Analyser les Ventes" pour générer l'analyse et le cube RDF.
 
 Vidéo de démonstration
-[Vidéo de démonstration](video_demo.mp4)
+[Vidéo de démonstration](https://drive.google.com/file/d/1zeyiBs1TcxS6iLD2X9cq3T_HTLzdkbe1/view?usp=sharing)
